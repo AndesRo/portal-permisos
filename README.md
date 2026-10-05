@@ -91,7 +91,7 @@ Usa solo la clave pública en el frontend. La clave secreta (`service_role` o `s
 
 1. **Disparador:** "Cuando se recibe una solicitud HTTP", con _Quién puede desencadenar el flujo_ en **Cualquiera** y el esquema del webhook de Supabase.
 2. **Aprobación:** "Iniciar y esperar una aprobación", tipo _Aprobar/Rechazar: el primero en responder_. Asigna al aprobador y arma el título y los detalles con los datos del registro (`record`).
-3. **Actualización:** acción HTTP con método `PATCH` a `https://TU_PROYECTO.supabase.co/rest/v1/solicitudes_permiso?id=eq.{id}`.
+3. **Actualización:** acción HTTP con método `PATCH` a `https://.supabase.co/rest/v1/solicitudes_permiso?id=eq.{id}`.
    - Encabezados: `apikey` (clave secreta), `Content-Type: application/json` y `Prefer: return=minimal`.
    - Cuerpo: `estado` (`aprobado` o `rechazado` según el resultado), `comentario_aprobador` y `resuelto_en`.
 4. **Notificación:** "Enviar un correo electrónico (V2)" al `empleado_email` con el resultado.
