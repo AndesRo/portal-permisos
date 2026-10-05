@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, type ChangeEvent, type FormEvent } from "
 import { createClient } from "@supabase/supabase-js";
 
 // Cambia el nombre que aparece en la cabecera
-const EMPRESA = "ABC Corp";
+const EMPRESA = "Demo";
 
 // .env: VITE_SUPABASE_URL y VITE_SUPABASE_ANON_KEY
 const supabase = createClient(
