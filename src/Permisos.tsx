@@ -271,7 +271,7 @@ export default function Permisos() {
           <div className="shrink-0 border-b border-[#E1E7EC] px-5 py-4">
             <h1 className="text-lg font-extrabold leading-tight">Solicitar permiso</h1>
             <p className="mt-0.5 text-[13px] text-[#5B6B78]">
-              El aprobador recibe tu solicitud por correo y te avisamos el resultado.
+             
             </p>
           </div>
 
